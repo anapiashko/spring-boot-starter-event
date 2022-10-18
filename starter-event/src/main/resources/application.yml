@@ -1,0 +1,5 @@
+eventstarter:
+  listener:
+    enabled-events:
+      - birthday
+      - funeral
