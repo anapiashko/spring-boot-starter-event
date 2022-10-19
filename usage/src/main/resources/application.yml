@@ -1,4 +1,4 @@
-eventstarter:
+event-starter:
   enabled: true
   listener:
     enabled-events:

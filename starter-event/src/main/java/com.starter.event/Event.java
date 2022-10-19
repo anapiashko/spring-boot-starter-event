@@ -7,7 +7,7 @@ import lombok.Value;
 @ToString
 public class Event {
 
-	private String type;
+	private EventType type;
 	private String payload;
 
 }

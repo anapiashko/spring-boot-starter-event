@@ -14,17 +14,17 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 public class EventPublisher {
 
-	/**
-	 * The listeners that should be notified about published events.
-	 */
-	private final List<EventListener> listeners;
+    /**
+     * The listeners that should be notified about published events.
+     */
+    private final List<EventListener> listeners;
 
-	public void publishEvent(Event event) {
-		log.info("publishing event: {}", event);
-		for (EventListener listener : listeners) {
-			listener.receive(event);
-		}
-	}
+    public void publishEvent(Event event) {
+        log.info("trying to publish event: {}", event);
+        for (EventListener listener : listeners) {
+            listener.receive(event);
+        }
+    }
 
 
 }

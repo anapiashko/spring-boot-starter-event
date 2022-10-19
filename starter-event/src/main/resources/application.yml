@@ -1,4 +1,4 @@
-eventstarter:
+event-starter:
   listener:
     enabled-events:
       - birthday
