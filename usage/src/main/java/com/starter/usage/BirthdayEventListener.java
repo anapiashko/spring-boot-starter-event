@@ -6,6 +6,7 @@ import com.starter.event.EventListenerProperties;
 import com.starter.event.EventType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
 @Slf4j
@@ -23,6 +24,8 @@ class BirthdayEventListener extends EventListener {
 	}
 
 	@Override
+	@KafkaListener(topics = "birthday",
+			groupId = "group-id")
 	public void onEvent(Event event) {
 		log.info("received event {}", event);
 	}
