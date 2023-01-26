@@ -1,6 +1,6 @@
-package com.starter.event;
+package test;
 
-import lombok.*;
+import lombok.Data;
 
 //@Value
 //@ToString
